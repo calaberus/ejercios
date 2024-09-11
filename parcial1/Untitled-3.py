@@ -1,13 +1,13 @@
 class circulo:
     def __init__(self, radio):
-        self.radio=radio
+        self._radio=radio
         self._pi=3.1415
 
     def calcularPerimetro(self):
-        return 2*self._pi*self.radio
+        return 2*self._pi*self._radio
     
     def calcularArea(self):
-        return self._pi*self.radio**2
+        return self._pi*self._radio**2
     
 c1=circulo(2.5)
 print(c1.calcularArea())
